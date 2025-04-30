@@ -8,8 +8,8 @@
 #PBS -q gpu
 #PBS -P Rainbow_DQN
 
+module purge
 module load compiler/anaconda3
 module load compiler/cuda-10.2
 cd /home/kartikeya.agrawal_ug25/RL_Final
-conda activate RL
-python3 RL.py
+conda run -n RL python RL.py

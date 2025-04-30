@@ -15,49 +15,13 @@ from noisylinear import NoisyLinear
 from rdqn import RainbowDQN
 from replaybuffer import PrioritizedReplayBuffer
 from agent import RainbowDQNAgent
-
-
-def train_agent(env, agent, num_episodes=1000, max_steps_per_episode=10000):
-    returns_history = []
-    losses_history = []
-
-    for episode in range(num_episodes):
-        state = env.reset()
-        episode_return = 0
-        episode_losses = []
-        done = False
-        steps_in_episode = 0
-
-        while not done and steps_in_episode < max_steps_per_episode:
-
-            action = agent.select_action(state)
-
-            next_state, reward, done = env.step(action)
-
-            agent.memory.push(state, action, reward, next_state, done)
-
-            state = next_state
-            episode_return += reward
-
-            loss_val = agent.optimize_model()
-            if loss_val is not None:
-                episode_losses.append(loss_val)
-
-            steps_in_episode += 1
-
-        returns_history.append(env.portfolio_value)
-        avg_loss = np.mean(episode_losses) if episode_losses else 0
-        losses_history.append(avg_loss)
-        print(
-            f"Episode {episode + 1}/{num_episodes}, "
-            f"Steps: {steps_in_episode}, "
-            f"Total Steps: {agent.steps_done}, "
-            f"Return: {env.portfolio_value:.2f}, "
-            f"Avg Loss: {avg_loss:.4f}"
-        )
-
-    return returns_history, losses_history, agent
-
+from train import train_agent
+from evaluate import (
+    evaluate_agent,
+    calculate_buy_and_hold,
+    calculate_max_drawdown,
+    calculate_sharpe_ratio,
+)
 
 if __name__ == "__main__":
 
@@ -158,3 +122,52 @@ if __name__ == "__main__":
         print(f"Checkpoint saved successfully to {save_path}")
     except Exception as e:
         print(f"Error saving checkpoint: {e}")
+
+    # ---------------------------------
+    #         Evaluate Agent
+    # ---------------------------------
+
+    initial_balance = 100000
+    eval_data = pd.read_csv("eval_data.csv")
+    processed_eval_data = calculate_technical_indicators(eval_data.copy())
+    processed_eval_data.dropna(inplace=True)
+    agent_portfolio_values, _ = evaluate_agent(
+        agent, processed_eval_data, initial_balance
+    )
+
+    agent_final_value = agent_portfolio_values[-1]
+    agent_total_return = (agent_final_value - initial_balance) / initial_balance * 100
+    agent_sharpe = calculate_sharpe_ratio(agent_portfolio_values)
+    agent_mdd = calculate_max_drawdown(agent_portfolio_values)
+
+    print(f"\nRainbow DQN Agent Test Results:")
+    print(f"  Final Portfolio Value: {agent_final_value:.2f}")
+    print(f"  Total Return: {agent_total_return:.2f}%")
+    print(f"  Annualized Sharpe Ratio: {agent_sharpe:.2f}")
+    print(f"  Maximum Drawdown: {agent_mdd:.2f}%")
+
+    # --- Buy and Hold Baseline ---
+    bnh_portfolio_values, bnh_total_return, bnh_mdd = calculate_buy_and_hold(
+        stock_data, initial_balance
+    )
+    # Sharpe for BnH isn't directly comparable if just using total return,
+    # but you could calculate it from its daily returns if needed:
+    bnh_sharpe = calculate_sharpe_ratio(bnh_portfolio_values)
+    print(f"  (BnH Annualized Sharpe Ratio: {bnh_sharpe:.2f})")  # For comparison
+
+    print("\n--- Comparison Table ---")
+    print("| Metric                     | Rainbow DQN Agent | Buy-and-Hold Baseline |")
+    print("| :------------------------- | :---------------- | :-------------------- |")
+    print(
+        f"| Total Return               | {agent_total_return: >17.2f}% | {bnh_total_return: >21.2f}% |"
+    )
+    print(
+        f"| Annualized Sharpe Ratio    | {agent_sharpe: >17.2f} | {bnh_sharpe: >21.2f} |"
+    )
+    print(f"| Maximum Drawdown (MDD)     | {agent_mdd: >17.2f}% | {bnh_mdd: >21.2f}% |")
+    print(
+        f"| Initial Balance            | {initial_balance: >17,.0f} | {initial_balance: >21,.0f} |"
+    )
+    print(
+        f"| Final Portfolio Value      | {agent_final_value: >17,.2f} | {bnh_portfolio_values[-1]: >21,.2f} |"
+    )
