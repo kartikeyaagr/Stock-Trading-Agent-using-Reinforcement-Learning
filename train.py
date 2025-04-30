@@ -13,20 +13,14 @@ def train_agent(env, agent, num_episodes=1000, max_steps_per_episode=10000):
         steps_in_episode = 0
 
         while not done and steps_in_episode < max_steps_per_episode:
-
             action = agent.select_action(state)
-
             next_state, reward, done = env.step(action)
-
             agent.memory.push(state, action, reward, next_state, done)
-
             state = next_state
             episode_return += reward
-
             loss_val = agent.optimize_model()
             if loss_val is not None:
                 episode_losses.append(loss_val)
-
             steps_in_episode += 1
 
         returns_history.append(env.portfolio_value)
@@ -39,5 +33,4 @@ def train_agent(env, agent, num_episodes=1000, max_steps_per_episode=10000):
             f"Return: {env.portfolio_value:.2f}, "
             f"Avg Loss: {avg_loss:.4f}"
         )
-
     return returns_history, losses_history, agent
