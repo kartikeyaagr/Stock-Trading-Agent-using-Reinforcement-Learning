@@ -3,7 +3,7 @@ import pandas as pd
 
 def collect_stock_data():
     print("Loading pre-downloaded stock data...")
-    DATA_FILE_PATH = "/home/kartikeya.agrawal_ug25/RL_Final/train_data.csv"
+    DATA_FILE_PATH = "data/train_data.csv"
     try:
         stock_data = pd.read_csv(DATA_FILE_PATH, index_col="Date", parse_dates=True)
         print("Data loaded successfully.")

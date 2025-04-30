@@ -48,9 +48,7 @@ print(f"Using device: {device_name}")
 agent = RainbowDQNAgent(state_size, action_size, device=device_name)
 
 load_checkpoint_flag = False
-checkpoint_load_path = (
-    "/home/kartikeya.agrawal_ug25/RL_Final/rainbow_dqn_agent_checkpoint_new.pth"
-)
+checkpoint_load_path = "checkpoints/rainbow_dqn_agent_checkpoint_new.pth"
 if load_checkpoint_flag:
     load_checkpoint(agent, checkpoint_load_path)
 
@@ -60,11 +58,13 @@ returns_history, losses_history, agent = train_agent(
     train_env, agent, num_episodes=num_train_episodes
 )
 
-plot_save_path = f"/home/kartikeya.agrawal_ug25/RL_Final/output/cumreturns_avgloss_{num_train_episodes}.png"
+plot_save_path = f"output/cumreturns_avgloss_{num_train_episodes}.png"
 print_charts(returns_history, losses_history, train_env, plot_save_path)
 
-checkpoint_save_path = f"/home/kartikeya.agrawal_ug25/RL_Final/output/rainbow_dqn_agent_checkpoint_{num_train_episodes}.pth"
+checkpoint_save_path = (
+    f"checkpoints/rainbow_dqn_agent_checkpoint_{num_train_episodes}.pth"
+)
 save_checkpoint(agent, checkpoint_save_path)
 
-eval_data_path = "/home/kartikeya.agrawal_ug25/RL_Final/eval_data.csv"
+eval_data_path = "data/eval_data.csv"
 evaluate(train_env, agent, eval_data_path)
