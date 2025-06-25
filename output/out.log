@@ -1,0 +1,301 @@
+Loading pre-downloaded stock data...
+Data loaded successfully.
+Training Dataset shape: (1188, 17)
+Training Date range: 2018-06-11 00:00:00+05:30 to 2023-03-29 00:00:00+05:30
+Environment initialized. State size: 12
+Using device: cuda
+Initializing RainbowDQN on device: cuda
+Initializing RainbowDQN on device: cuda
+Starting training for 100 episodes...
+--- Updating target network at step 1000 ---
+Episode 1/100, Steps: 1187, Total Steps: 1154, Portfolio: 252846.64, Avg Loss: 3.9000
+
+N-step Return Stats (last 36928 optimization samples):
+  Min: -0.1649, Max: 0.1415, Mean: 0.0033
+  Percentiles: 5th=-0.0384, 95th=0.0483
+--- Updating target network at step 2000 ---
+Episode 2/100, Steps: 1187, Total Steps: 2341, Portfolio: 104374.49, Avg Loss: 3.8681
+--- Updating target network at step 3000 ---
+Episode 3/100, Steps: 1187, Total Steps: 3528, Portfolio: 166839.65, Avg Loss: 3.8364
+--- Updating target network at step 4000 ---
+Episode 4/100, Steps: 1187, Total Steps: 4715, Portfolio: 173385.11, Avg Loss: 3.8083
+--- Updating target network at step 5000 ---
+Episode 5/100, Steps: 1187, Total Steps: 5902, Portfolio: 155608.83, Avg Loss: 3.7780
+--- Updating target network at step 6000 ---
+--- Updating target network at step 7000 ---
+Episode 6/100, Steps: 1187, Total Steps: 7089, Portfolio: 119856.58, Avg Loss: 3.7456
+--- Updating target network at step 8000 ---
+Episode 7/100, Steps: 1187, Total Steps: 8276, Portfolio: 139873.87, Avg Loss: 3.7155
+--- Updating target network at step 9000 ---
+Episode 8/100, Steps: 1187, Total Steps: 9463, Portfolio: 122303.79, Avg Loss: 3.6853
+--- Updating target network at step 10000 ---
+Episode 9/100, Steps: 1187, Total Steps: 10650, Portfolio: 278036.88, Avg Loss: 3.6537
+--- Updating target network at step 11000 ---
+Episode 10/100, Steps: 1187, Total Steps: 11837, Portfolio: 158619.22, Avg Loss: 3.6200
+--- Updating target network at step 12000 ---
+--- Updating target network at step 13000 ---
+Episode 11/100, Steps: 1187, Total Steps: 13024, Portfolio: 242806.60, Avg Loss: 3.5864
+
+N-step Return Stats (last 379840 optimization samples):
+  Min: -0.1996, Max: 0.2123, Mean: 0.0015
+  Percentiles: 5th=-0.0354, 95th=0.0409
+--- Updating target network at step 14000 ---
+Episode 12/100, Steps: 1187, Total Steps: 14211, Portfolio: 252586.35, Avg Loss: 3.5539
+--- Updating target network at step 15000 ---
+Episode 13/100, Steps: 1187, Total Steps: 15398, Portfolio: 314488.05, Avg Loss: 3.5153
+--- Updating target network at step 16000 ---
+Episode 14/100, Steps: 1187, Total Steps: 16585, Portfolio: 234300.87, Avg Loss: 3.4867
+--- Updating target network at step 17000 ---
+Episode 15/100, Steps: 1187, Total Steps: 17772, Portfolio: 235951.08, Avg Loss: 3.4441
+--- Updating target network at step 18000 ---
+Episode 16/100, Steps: 1187, Total Steps: 18959, Portfolio: 214183.18, Avg Loss: 3.4154
+--- Updating target network at step 19000 ---
+--- Updating target network at step 20000 ---
+Episode 17/100, Steps: 1187, Total Steps: 20146, Portfolio: 123443.33, Avg Loss: 3.3857
+--- Updating target network at step 21000 ---
+Episode 18/100, Steps: 1187, Total Steps: 21333, Portfolio: 175004.52, Avg Loss: 3.3498
+--- Updating target network at step 22000 ---
+Episode 19/100, Steps: 1187, Total Steps: 22520, Portfolio: 273628.65, Avg Loss: 3.3270
+--- Updating target network at step 23000 ---
+Episode 20/100, Steps: 1187, Total Steps: 23707, Portfolio: 202309.23, Avg Loss: 3.2931
+--- Updating target network at step 24000 ---
+Episode 21/100, Steps: 1187, Total Steps: 24894, Portfolio: 140622.21, Avg Loss: 3.2612
+
+N-step Return Stats (last 379840 optimization samples):
+  Min: -0.1996, Max: 0.2123, Mean: 0.0018
+  Percentiles: 5th=-0.0383, 95th=0.0448
+--- Updating target network at step 25000 ---
+--- Updating target network at step 26000 ---
+Episode 22/100, Steps: 1187, Total Steps: 26081, Portfolio: 181857.16, Avg Loss: 3.2242
+--- Updating target network at step 27000 ---
+Episode 23/100, Steps: 1187, Total Steps: 27268, Portfolio: 263849.01, Avg Loss: 3.1852
+--- Updating target network at step 28000 ---
+Episode 24/100, Steps: 1187, Total Steps: 28455, Portfolio: 222329.90, Avg Loss: 3.1610
+--- Updating target network at step 29000 ---
+Episode 25/100, Steps: 1187, Total Steps: 29642, Portfolio: 137252.70, Avg Loss: 3.1373
+--- Updating target network at step 30000 ---
+Episode 26/100, Steps: 1187, Total Steps: 30829, Portfolio: 245829.62, Avg Loss: 3.1060
+--- Updating target network at step 31000 ---
+--- Updating target network at step 32000 ---
+Episode 27/100, Steps: 1187, Total Steps: 32016, Portfolio: 216041.87, Avg Loss: 3.0755
+--- Updating target network at step 33000 ---
+Episode 28/100, Steps: 1187, Total Steps: 33203, Portfolio: 128519.96, Avg Loss: 3.0377
+--- Updating target network at step 34000 ---
+Episode 29/100, Steps: 1187, Total Steps: 34390, Portfolio: 254344.91, Avg Loss: 3.0131
+--- Updating target network at step 35000 ---
+Episode 30/100, Steps: 1187, Total Steps: 35577, Portfolio: 144510.24, Avg Loss: 2.9748
+--- Updating target network at step 36000 ---
+Episode 31/100, Steps: 1187, Total Steps: 36764, Portfolio: 135484.59, Avg Loss: 2.9455
+
+N-step Return Stats (last 379840 optimization samples):
+  Min: -0.1996, Max: 0.2127, Mean: 0.0019
+  Percentiles: 5th=-0.0406, 95th=0.0473
+--- Updating target network at step 37000 ---
+Episode 32/100, Steps: 1187, Total Steps: 37951, Portfolio: 206185.98, Avg Loss: 2.9194
+--- Updating target network at step 38000 ---
+--- Updating target network at step 39000 ---
+Episode 33/100, Steps: 1187, Total Steps: 39138, Portfolio: 195149.00, Avg Loss: 2.8859
+--- Updating target network at step 40000 ---
+Episode 34/100, Steps: 1187, Total Steps: 40325, Portfolio: 87898.58, Avg Loss: 2.8590
+--- Updating target network at step 41000 ---
+Episode 35/100, Steps: 1187, Total Steps: 41512, Portfolio: 189684.65, Avg Loss: 2.8304
+--- Updating target network at step 42000 ---
+Episode 36/100, Steps: 1187, Total Steps: 42699, Portfolio: 188453.38, Avg Loss: 2.7957
+--- Updating target network at step 43000 ---
+Episode 37/100, Steps: 1187, Total Steps: 43886, Portfolio: 218584.50, Avg Loss: 2.7666
+--- Updating target network at step 44000 ---
+--- Updating target network at step 45000 ---
+Episode 38/100, Steps: 1187, Total Steps: 45073, Portfolio: 204588.47, Avg Loss: 2.7429
+--- Updating target network at step 46000 ---
+Episode 39/100, Steps: 1187, Total Steps: 46260, Portfolio: 193299.91, Avg Loss: 2.7037
+--- Updating target network at step 47000 ---
+Episode 40/100, Steps: 1187, Total Steps: 47447, Portfolio: 163924.72, Avg Loss: 2.6666
+--- Updating target network at step 48000 ---
+Episode 41/100, Steps: 1187, Total Steps: 48634, Portfolio: 202196.84, Avg Loss: 2.6239
+
+N-step Return Stats (last 379840 optimization samples):
+  Min: -0.1996, Max: 0.2127, Mean: 0.0019
+  Percentiles: 5th=-0.0409, 95th=0.0477
+--- Updating target network at step 49000 ---
+Episode 42/100, Steps: 1187, Total Steps: 49821, Portfolio: 165777.27, Avg Loss: 2.5970
+--- Updating target network at step 50000 ---
+--- Updating target network at step 51000 ---
+Episode 43/100, Steps: 1187, Total Steps: 51008, Portfolio: 338272.50, Avg Loss: 2.5687
+--- Updating target network at step 52000 ---
+Episode 44/100, Steps: 1187, Total Steps: 52195, Portfolio: 138718.44, Avg Loss: 2.5433
+--- Updating target network at step 53000 ---
+Episode 45/100, Steps: 1187, Total Steps: 53382, Portfolio: 141926.14, Avg Loss: 2.5192
+--- Updating target network at step 54000 ---
+Episode 46/100, Steps: 1187, Total Steps: 54569, Portfolio: 104245.10, Avg Loss: 2.4859
+--- Updating target network at step 55000 ---
+Episode 47/100, Steps: 1187, Total Steps: 55756, Portfolio: 140948.37, Avg Loss: 2.4564
+--- Updating target network at step 56000 ---
+Episode 48/100, Steps: 1187, Total Steps: 56943, Portfolio: 142347.79, Avg Loss: 2.4337
+--- Updating target network at step 57000 ---
+--- Updating target network at step 58000 ---
+Episode 49/100, Steps: 1187, Total Steps: 58130, Portfolio: 163377.26, Avg Loss: 2.4037
+--- Updating target network at step 59000 ---
+Episode 50/100, Steps: 1187, Total Steps: 59317, Portfolio: 198426.66, Avg Loss: 2.3771
+--- Updating target network at step 60000 ---
+Episode 51/100, Steps: 1187, Total Steps: 60504, Portfolio: 135363.17, Avg Loss: 2.3458
+
+N-step Return Stats (last 379840 optimization samples):
+  Min: -0.1996, Max: 0.2127, Mean: 0.0019
+  Percentiles: 5th=-0.0409, 95th=0.0476
+--- Updating target network at step 61000 ---
+Episode 52/100, Steps: 1187, Total Steps: 61691, Portfolio: 125320.16, Avg Loss: 2.3187
+--- Updating target network at step 62000 ---
+Episode 53/100, Steps: 1187, Total Steps: 62878, Portfolio: 169586.35, Avg Loss: 2.2976
+--- Updating target network at step 63000 ---
+--- Updating target network at step 64000 ---
+Episode 54/100, Steps: 1187, Total Steps: 64065, Portfolio: 135183.97, Avg Loss: 2.2683
+--- Updating target network at step 65000 ---
+Episode 55/100, Steps: 1187, Total Steps: 65252, Portfolio: 185621.56, Avg Loss: 2.2432
+--- Updating target network at step 66000 ---
+Episode 56/100, Steps: 1187, Total Steps: 66439, Portfolio: 135321.04, Avg Loss: 2.2195
+--- Updating target network at step 67000 ---
+Episode 57/100, Steps: 1187, Total Steps: 67626, Portfolio: 165488.22, Avg Loss: 2.1906
+--- Updating target network at step 68000 ---
+Episode 58/100, Steps: 1187, Total Steps: 68813, Portfolio: 99815.52, Avg Loss: 2.1600
+--- Updating target network at step 69000 ---
+--- Updating target network at step 70000 ---
+Episode 59/100, Steps: 1187, Total Steps: 70000, Portfolio: 112284.32, Avg Loss: 2.1352
+--- Updating target network at step 71000 ---
+Episode 60/100, Steps: 1187, Total Steps: 71187, Portfolio: 152230.86, Avg Loss: 2.1123
+--- Updating target network at step 72000 ---
+Episode 61/100, Steps: 1187, Total Steps: 72374, Portfolio: 145894.32, Avg Loss: 2.0895
+
+N-step Return Stats (last 379840 optimization samples):
+  Min: -0.1996, Max: 0.2127, Mean: 0.0018
+  Percentiles: 5th=-0.0404, 95th=0.0473
+--- Updating target network at step 73000 ---
+Episode 62/100, Steps: 1187, Total Steps: 73561, Portfolio: 220714.37, Avg Loss: 2.0694
+--- Updating target network at step 74000 ---
+Episode 63/100, Steps: 1187, Total Steps: 74748, Portfolio: 146762.84, Avg Loss: 2.0424
+--- Updating target network at step 75000 ---
+Episode 64/100, Steps: 1187, Total Steps: 75935, Portfolio: 171435.78, Avg Loss: 2.0132
+--- Updating target network at step 76000 ---
+--- Updating target network at step 77000 ---
+Episode 65/100, Steps: 1187, Total Steps: 77122, Portfolio: 217963.95, Avg Loss: 1.9842
+--- Updating target network at step 78000 ---
+Episode 66/100, Steps: 1187, Total Steps: 78309, Portfolio: 110965.31, Avg Loss: 1.9625
+--- Updating target network at step 79000 ---
+Episode 67/100, Steps: 1187, Total Steps: 79496, Portfolio: 173611.11, Avg Loss: 1.9324
+--- Updating target network at step 80000 ---
+Episode 68/100, Steps: 1187, Total Steps: 80683, Portfolio: 139416.66, Avg Loss: 1.9160
+--- Updating target network at step 81000 ---
+Episode 69/100, Steps: 1187, Total Steps: 81870, Portfolio: 209819.93, Avg Loss: 1.8922
+--- Updating target network at step 82000 ---
+--- Updating target network at step 83000 ---
+Episode 70/100, Steps: 1187, Total Steps: 83057, Portfolio: 140965.98, Avg Loss: 1.8712
+--- Updating target network at step 84000 ---
+Episode 71/100, Steps: 1187, Total Steps: 84244, Portfolio: 206827.94, Avg Loss: 1.8476
+
+N-step Return Stats (last 379840 optimization samples):
+  Min: -0.1998, Max: 0.2127, Mean: 0.0019
+  Percentiles: 5th=-0.0403, 95th=0.0472
+--- Updating target network at step 85000 ---
+Episode 72/100, Steps: 1187, Total Steps: 85431, Portfolio: 186211.81, Avg Loss: 1.8287
+--- Updating target network at step 86000 ---
+Episode 73/100, Steps: 1187, Total Steps: 86618, Portfolio: 174008.97, Avg Loss: 1.8100
+--- Updating target network at step 87000 ---
+Episode 74/100, Steps: 1187, Total Steps: 87805, Portfolio: 132608.25, Avg Loss: 1.7955
+--- Updating target network at step 88000 ---
+Episode 75/100, Steps: 1187, Total Steps: 88992, Portfolio: 226843.30, Avg Loss: 1.7760
+--- Updating target network at step 89000 ---
+--- Updating target network at step 90000 ---
+Episode 76/100, Steps: 1187, Total Steps: 90179, Portfolio: 140997.20, Avg Loss: 1.7400
+--- Updating target network at step 91000 ---
+Episode 77/100, Steps: 1187, Total Steps: 91366, Portfolio: 113296.67, Avg Loss: 1.7313
+--- Updating target network at step 92000 ---
+Episode 78/100, Steps: 1187, Total Steps: 92553, Portfolio: 110366.79, Avg Loss: 1.7220
+--- Updating target network at step 93000 ---
+Episode 79/100, Steps: 1187, Total Steps: 93740, Portfolio: 217172.92, Avg Loss: 1.7080
+--- Updating target network at step 94000 ---
+Episode 80/100, Steps: 1187, Total Steps: 94927, Portfolio: 224291.95, Avg Loss: 1.6981
+--- Updating target network at step 95000 ---
+--- Updating target network at step 96000 ---
+Episode 81/100, Steps: 1187, Total Steps: 96114, Portfolio: 101236.93, Avg Loss: 1.6705
+
+N-step Return Stats (last 379840 optimization samples):
+  Min: -0.1998, Max: 0.2127, Mean: 0.0017
+  Percentiles: 5th=-0.0394, 95th=0.0457
+--- Updating target network at step 97000 ---
+Episode 82/100, Steps: 1187, Total Steps: 97301, Portfolio: 166872.28, Avg Loss: 1.6496
+--- Updating target network at step 98000 ---
+Episode 83/100, Steps: 1187, Total Steps: 98488, Portfolio: 202326.78, Avg Loss: 1.6310
+--- Updating target network at step 99000 ---
+Episode 84/100, Steps: 1187, Total Steps: 99675, Portfolio: 87981.31, Avg Loss: 1.6198
+--- Updating target network at step 100000 ---
+Episode 85/100, Steps: 1187, Total Steps: 100862, Portfolio: 118270.23, Avg Loss: 1.6133
+--- Updating target network at step 101000 ---
+--- Updating target network at step 102000 ---
+Episode 86/100, Steps: 1187, Total Steps: 102049, Portfolio: 103806.68, Avg Loss: 1.5901
+--- Updating target network at step 103000 ---
+Episode 87/100, Steps: 1187, Total Steps: 103236, Portfolio: 121580.84, Avg Loss: 1.5710
+--- Updating target network at step 104000 ---
+Episode 88/100, Steps: 1187, Total Steps: 104423, Portfolio: 173109.51, Avg Loss: 1.5595
+--- Updating target network at step 105000 ---
+Episode 89/100, Steps: 1187, Total Steps: 105610, Portfolio: 119595.35, Avg Loss: 1.5441
+--- Updating target network at step 106000 ---
+Episode 90/100, Steps: 1187, Total Steps: 106797, Portfolio: 111311.63, Avg Loss: 1.5344
+--- Updating target network at step 107000 ---
+Episode 91/100, Steps: 1187, Total Steps: 107984, Portfolio: 99898.01, Avg Loss: 1.5181
+
+N-step Return Stats (last 379840 optimization samples):
+  Min: -0.1998, Max: 0.2127, Mean: 0.0016
+  Percentiles: 5th=-0.0384, 95th=0.0443
+--- Updating target network at step 108000 ---
+--- Updating target network at step 109000 ---
+Episode 92/100, Steps: 1187, Total Steps: 109171, Portfolio: 105449.92, Avg Loss: 1.5044
+--- Updating target network at step 110000 ---
+Episode 93/100, Steps: 1187, Total Steps: 110358, Portfolio: 143841.57, Avg Loss: 1.4910
+--- Updating target network at step 111000 ---
+Episode 94/100, Steps: 1187, Total Steps: 111545, Portfolio: 90902.94, Avg Loss: 1.4825
+--- Updating target network at step 112000 ---
+Episode 95/100, Steps: 1187, Total Steps: 112732, Portfolio: 177812.21, Avg Loss: 1.4712
+--- Updating target network at step 113000 ---
+Episode 96/100, Steps: 1187, Total Steps: 113919, Portfolio: 129609.90, Avg Loss: 1.4595
+--- Updating target network at step 114000 ---
+--- Updating target network at step 115000 ---
+Episode 97/100, Steps: 1187, Total Steps: 115106, Portfolio: 126586.79, Avg Loss: 1.4501
+--- Updating target network at step 116000 ---
+Episode 98/100, Steps: 1187, Total Steps: 116293, Portfolio: 154538.84, Avg Loss: 1.4427
+--- Updating target network at step 117000 ---
+Episode 99/100, Steps: 1187, Total Steps: 117480, Portfolio: 112507.44, Avg Loss: 1.4385
+--- Updating target network at step 118000 ---
+Episode 100/100, Steps: 1187, Total Steps: 118667, Portfolio: 116696.20, Avg Loss: 1.4259
+Generating training performance plot...
+Training plot saved successfully to /content/output/training_performance_100.png
+
+============================== STARTING EVALUATION ==============================
+Eval data range: 2023-06-15 00:00:00+05:30 to 2025-03-28 00:00:00+05:30, Shape: (442, 17)
+Simulating agent on evaluation data...
+Environment initialized. State size: 12
+Agent simulation complete. Final portfolio value: 100031.00
+Simulating Buy and Hold strategy...
+Buy & Hold simulation complete. Final portfolio value: 108605.83, Total Return: 8.61%
+
+--- Evaluation Results ---
+Metric               | Agent           | Buy & Hold
+-------------------------------------------------------
+Final Portfolio      | 100031.00       | 108605.83
+Total Return (%)     | 0.03            | 8.61
+Sharpe Ratio         | 0.76            | 0.33
+Max Drawdown (%)     | 0.00            | -27.38
+-------------------------------------------------------
+
+--- Generating Evaluation Plots ---
+Generating Portfolio Value plot...
+Portfolio Value plot saved to /content/output/evaluation_portfolio_value.png
+Generating Drawdown plot...
+Drawdown plot saved to /content/output/evaluation_drawdown.png
+Generating Actions plot...
+/tmp/ipython-input-6-2532446217.py:911: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  price_data_for_actions[buy_indices],
+/tmp/ipython-input-6-2532446217.py:922: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  price_data_for_actions[sell_indices],
+Actions plot saved to /content/output/evaluation_actions.png
+Generating Returns Histogram plot...
+Returns Histogram plot saved to /content/output/evaluation_returns_histogram.png
+============================== EVALUATION FINISHED ==============================
